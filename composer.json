@@ -19,7 +19,7 @@
     ],
     "require":{
         "cakephp/cakephp": ">3.0",
-        "maknz/slack": "~1.7"
+        "maknz/slack": "~1.7.1"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
