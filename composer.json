@@ -38,7 +38,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url":  "git@github.com:easysecure/slack"
+            "url":  "git@github.com:easysecure/slack.git"
         }
     ],
     "suggest": {
