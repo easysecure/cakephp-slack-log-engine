@@ -35,6 +35,12 @@
             "Cake\\Test\\Fixture\\": "./vendor/cakephp/cakephp/tests/Fixture"
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:easysecure/slack"
+        }
+    ],
     "suggest": {
     },
     "support":{
