@@ -28,7 +28,7 @@ class SlackLogEngine extends BaseLog
      *
      * @var array
      */
-    protected $_defaultConfig = [
+    protected array $_defaultConfig = [
         'types' => null,
         'levels' => [],
         'scopes' => [],
