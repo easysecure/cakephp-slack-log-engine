@@ -105,13 +105,13 @@ class SlackLogEngine extends BaseLog
      * @param array $context Additional information about the logged message
      * @return bool success
      */
-    public function log($level, $message, array $context = [])
+    public function log($level, $message, array $context = []) : void
     {
         if (!$this->_valid) {
-            return false;
+            return;
         }
 
-        $message = $this->_format($message, $context);
+        $message = $this->interpolate($message, $context);
         $output = date('Y-m-d H:i:s') . ' ' . ucfirst($level) . ': ' . $message;
         try {
             $this->_SlackClient->send($output);
@@ -122,9 +122,9 @@ class SlackLogEngine extends BaseLog
                 throw $e;
             }
             // otherwise DO nothing
-            return false;
+            return;
         }
 
-        return true;
+        return;
     }
 }
